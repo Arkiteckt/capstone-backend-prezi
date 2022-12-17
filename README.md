@@ -1,23 +1,5 @@
 
 
-
-
-
-
-## How to Start
-cd /Users/mindyourbizniz/201-workspace-August-22-204/capstone/capstone\ client
-
-cd /Users/mindyourbizniz/201-workspace-August-22-204/capstone/capstone\ backend
-
-
-T@hmuny54@5703
-
-Dev718
-
-Delete lines 102-106 on landing.js
-
-Orlando.Tyrell@codeimmersives.com
-
 ## Folders
 
 - auth: contaiins Passport.js set up/config files
