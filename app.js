@@ -50,6 +50,12 @@ app.use((req, res, next) => {
   console.log(req.user);
   next();
 });
+//edited code to include environmental variable per instructions
+app.use(cors(
+  {
+    origin:process.env.CORS_ORIGIN
+  }
+));
 
 app.use("/api", indexRouter);
 app.use("/api/auth", authRouter);
