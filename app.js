@@ -57,6 +57,7 @@ app.use(cors(
     origin:process.env.CORS_ORIGIN
   }
 ));
+
 app.use("/api", indexRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/projects", projectsRouter);
