@@ -51,10 +51,16 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/", indexRouter);
-app.use("/auth", authRouter);
-app.use("/projects", projectsRouter);
-app.use("/userData", userDataRouter);
-app.use("/searchProjects", searchProjectsRouter);
+//edited code to include environmental variable per instructions
+app.use(cors(
+  {
+    origin:process.env.CORS_ORIGIN
+  }
+));
+app.use("/api", indexRouter);
+app.use("/api/auth", authRouter);
+app.use("/api/projects", projectsRouter);
+app.use("/api/userData", userDataRouter);
+app.use("/api/searchProjects", searchProjectsRouter);
 
 module.exports = app;
